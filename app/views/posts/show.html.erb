@@ -19,7 +19,7 @@ content : <%= @post.content %>
 <% end %>
 
 <h4>좋아요</h4>
-좋아요 갯수 : <%= @post.users.count %>
+좋아요 갯수 : <%= @post.likes.count %>
 <br>
 
 <a href="/posts/<%= @post.id %>/likes">좋아요</a>

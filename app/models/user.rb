@@ -6,6 +6,6 @@ class User < ApplicationRecord
          
   # dependent 필수
   has_many :likes, dependent: :destroy
-  has_many :posts, through: :likes
+  has_many :liked_posts, through: :likes, source: :post
 end
 
