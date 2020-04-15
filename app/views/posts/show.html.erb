@@ -14,7 +14,7 @@ content : <%= @post.content %>
 <h4>댓글들</h4>
 <% @post.comments.each do |comment| %>
     <%= comment.body %>
-    <a href="/comments/<%= comment.id %>" data-method="delete">삭제</a>
+    <a href="/comments/<%= comment.id %>">삭제</a>
     <hr>
 <% end %>
 
